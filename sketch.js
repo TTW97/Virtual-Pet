@@ -37,7 +37,7 @@ function draw() {
   }
 
   stroke("black");
-  text("Food: " + foodS,100,100);
+  text("Food Remaining: " + foodS,100,100);
 
 }
 
