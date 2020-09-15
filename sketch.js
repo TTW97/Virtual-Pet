@@ -17,7 +17,7 @@ function setup() {
   database = firebase.database();
 
   foodStock = database.ref('Food');
-  foodStock.on("value", readStock());
+  foodStock.on("value", readStock);
   
 }
 
@@ -36,7 +36,8 @@ function draw() {
 
   }
 
-  text("Food: " + foodStock,100,100);
+  stroke("black");
+  text("Food: " + foodS,100,100);
 
 }
 
